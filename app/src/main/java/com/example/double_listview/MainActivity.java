@@ -1,6 +1,7 @@
 package com.example.double_listview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
+        //ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
+        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.listView);
         create_departments_list();
         create_classes_list();
         System.out.println(departments);
